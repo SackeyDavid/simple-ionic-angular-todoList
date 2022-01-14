@@ -1,0 +1,31 @@
+• src
++--- • app
+|    +--• components
+|    |  +--• task
+|    |  |  |--task.component.ts|.html|.scss
+|    |  +--• new-task
+|    |  |  |--new-task.component.ts|.html|.scss
+|    |
+|    +--• pages
+|    |  +--• edit-task
+|    |  |  |--edit-task.page.ts|.html|.scss
+|    |
+|    +--• models
+|    |  |--todo.model.ts
+|    |  
+|    +--• services
+|    |  |--todo.service.ts
+|    |
+|    +--• home
+|    |  |--home.page.ts|.html|.scss
+|    |
+|    +--• theme
+|    |  |--variables.scss
+|    |
+|    |--app.module.ts
+|    |
+|    |--app-routing.module.ts 
+|
+|--index.html (unpkg path for boxicons)
+|--global.scss (google font path for Spline Sans font)
+		

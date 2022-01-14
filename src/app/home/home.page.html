@@ -1,20 +1,26 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+<ion-header class="ion-no-border" [translucent]="true">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button class="search-btn">
+        <ion-icon slot="icon-only" name="search"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon slot="icon-only" name="notifications-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <strong>What's up, Joy!</strong>
+    <span class="sub-header">categories</span>
+    
   </div>
 </ion-content>
