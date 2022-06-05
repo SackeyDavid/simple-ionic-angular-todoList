@@ -1,27 +1,113 @@
+ion-toolbar {
+  --background: var(--ion-background-color, --td-bg);
+  padding: 1rem 0.3rem;
+  padding-bottom: 0;
+
+  ion-icon,
+  i {
+    font-weight: lighter;
+    color: var(--ion-secondary-text-color);
+    font-size: 1.66rem;
+  }
+
+  ion-button.search-btn {
+    margin-right: 0.2rem;
+  }
+}
+
+ion-content {
+  --background: var(--ion-background-color, --td-bg);
+}
+
 #container {
-  text-align: center;
+  padding: 3rem 0rem;
+  padding-top: 1.5vh;
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  strong {
+    font-size: xx-large;
+    padding-left: 1.2rem;
+    letter-spacing: 0.5px;
+  }
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.sub-header,
+.todays-header {
+  text-transform: uppercase;
+  display: block;
+  margin-left: 1.2rem;
+  margin-top: 4vh;
+  font-size: small;
+  letter-spacing: 0.5px;
+  color: var(--ion-secondary-text-color);
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.todays-header {
+  margin-top: 2vh;
+  margin-bottom: 3vh;
 }
 
-#container a {
-  text-decoration: none;
+.categories {
+  &-name {
+    color: var(--color);
+    font-size: large;
+    font-weight: 600;
+  }
+
+  &-buttons {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1.8rem 1rem;
+    padding-bottom: 1.1rem;
+    margin: 1rem;
+    margin-bottom: 1.4rem;
+    margin-right: 0;
+    border-radius: 1.4rem;
+    font-size: larger;
+    color: var(--ion-color-secondary-contrast);
+    background-color: var(--ion-card-background);
+    text-align: left;
+    box-shadow: var(--ion-card-box-shadow);
+
+    ion-icon,
+    .bx-envelope {
+      font-size: xx-large;
+    }
+
+    ion-progress-bar {
+      margin-top: 0.6rem;
+      --background: var(--ion-progressbar);
+    }
+
+    .task-count {
+      color: var(--ion-secondary-text-color);
+      font-size: small;
+    }
+
+    span {
+      margin-bottom: 0.7rem;
+    }
+  }
+}
+
+.business {
+  ion-progress-bar {
+    --progress-background: var(--td-magenta);
+  }
+}
+
+.personal {
+  ion-progress-bar {
+    --progress-background: var(--td-blue);
+  }
+}
+
+.task-list {
+  margin-top: 1rem;
+  padding: 0 1.2rem;
+}
+
+ion-fab {
+  bottom: 40px;
+  right: calc(20px + var(--ion-safe-area-right, 0px));
 }

@@ -22,5 +22,39 @@
     <strong>What's up, Joy!</strong>
     <span class="sub-header">categories</span>
     
+    <!-- categories -->
+    <ion-slides pager="false" [options]="sliderConfig">
+      <ion-slide class="categories">
+          <div class="categories-buttons business" >
+            <span class="task-count">
+              40 tasks
+            </span>
+            <span class="categories-name"> Business</span>
+            <ion-progress-bar 
+            mode="ios" 
+            value="0.7"
+            ></ion-progress-bar>
+          </div>
+      </ion-slide>
+      <ion-slide class="categories">
+        <div class="categories-buttons personal">
+          <span class="task-count">
+            18 tasks
+            </span>
+          <span class="categories-name"> Personal</span>
+          <ion-progress-bar 
+          mode="ios" 
+          value="0.3"
+          ></ion-progress-bar>
+        </div>
+      </ion-slide>
+    </ion-slides>
+    
+    <span class="todays-header">TODAY'S TASKs</span>
+    <div class="task-list">
+      <!-- This is where the tasks will go -->
+      <app-task [text]="'Task 1'"></app-task>
+      <app-task [text]="'Task 2'"></app-task>
+    </div>
   </div>
 </ion-content>

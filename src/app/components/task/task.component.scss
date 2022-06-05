@@ -1,0 +1,70 @@
+.item {
+  background-color: var(--ion-card-background);
+  padding: 22px 0;
+  border-radius: 1.3rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.itemsLeft {
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.square {
+  width: 24px;
+  height: 24px;
+  background-color: #55bcf6;
+  opacity: 0.4;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+.itemText {
+  max-width: 80%;
+}
+
+.circular,
+.circular-filled {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blue {
+  border: 2px solid var(--td-blue);
+}
+
+.magenta {
+  border: 2px solid var(--td-magenta);
+}
+
+.circular-filled {
+  background-color: var(--ion-checkmark-background);
+  border: none;
+  padding: 2px;
+
+  i {
+    font-size: large;
+    color: var(--ion-color-primary-contrast);
+  }
+}
+
+table {
+  width: 100%;
+}
+
+td.task {
+  &-category {
+    width: 20%;
+    text-align: center;
+  }
+  &-name {
+    width: 80%;
+  }
+}

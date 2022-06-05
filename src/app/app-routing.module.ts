@@ -12,7 +12,7 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'edit-task',
+    path: 'edit-task/:id',
     loadChildren: () => import('./pages/edit-task/edit-task.module').then( m => m.EditTaskPageModule)
   },
 ];
