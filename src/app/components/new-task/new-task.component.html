@@ -1,3 +1,40 @@
-<p>
-  new-task works!
-</p>
+<ion-header class="ion-no-border" [translucent]="true">
+  <ion-toolbar mode="ios">
+    <div class="close-outline">
+      <ion-icon name="close-outline" (click)="modalController.dismiss()"></ion-icon>
+    </div>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <ion-input autofocus="true" placeholder="Enter new task" #taskName [value]="todoName" required></ion-input>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            <span class="rounded-rectangle">
+              <ion-icon name="calendar-clear-outline"></ion-icon>
+              <span>Today</span>
+            </span>
+          </td>
+          <td>
+            <div class="rounded">
+              <ion-icon id="radio-icon" class="radio-business" name="radio-button-on-outline"></ion-icon>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <span class="bottom-icons">
+      <i class='bx bx-folder-plus'></i>
+      <ion-icon name="flag-outline"></ion-icon>
+      <ion-icon name="moon-outline"></ion-icon>
+    </span>
+  </div>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      New task &nbsp; <ion-icon name="chevron-up-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
